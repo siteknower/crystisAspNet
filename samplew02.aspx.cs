@@ -1,5 +1,4 @@
-﻿using StnwServiceWeb;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -7,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CrystisWeb;
+
 public partial class samplew02 : System.Web.UI.Page
 {
     public DataSet dst;
@@ -121,7 +122,7 @@ public partial class samplew02 : System.Web.UI.Page
     protected void btnPrint_Click(object sender, EventArgs e)
     {
 
-        clsStnwClassWeb tsi = new clsStnwClassWeb();
+        clsCrystisClassWeb tsi = new clsCrystisClassWeb();
         tsi.dsRPT = dst;
 
         tsi.AccountCode = "DEMO1";

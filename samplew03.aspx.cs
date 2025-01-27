@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
-using StnwServiceWeb;
+using CrystisWeb;
 
 public partial class samplew03 : System.Web.UI.Page
 {
@@ -102,7 +102,7 @@ public partial class samplew03 : System.Web.UI.Page
     protected void btnPrint_Click(object sender, EventArgs e)
     {
 
-        clsStnwClassWeb tsi = new clsStnwClassWeb();
+        clsCrystisClassWeb tsi = new clsCrystisClassWeb();
 
         dst.Tables["Dummy"].Rows[0]["Text1"] = txtCustomer.Text;
 

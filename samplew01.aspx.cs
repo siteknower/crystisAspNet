@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using StnwServiceWeb;
+using CrystisWeb;
 
 public partial class samplew01 : System.Web.UI.Page
 {
@@ -50,7 +50,7 @@ public partial class samplew01 : System.Web.UI.Page
     protected void btnPrint_Click(object sender, EventArgs e)
     {
 
-        clsStnwClassWeb tsi = new clsStnwClassWeb();
+        clsCrystisClassWeb tsi = new clsCrystisClassWeb();
         tsi.dsRPT = dst;
 
         tsi.AccountCode = "DEMO1";  // your account code
