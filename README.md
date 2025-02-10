@@ -54,7 +54,6 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 2. Install CrystisWeb.dll (Recommended: via NuGet)
 
    ```bash
-   git clone https://github.com/siteknower/crystisAspNet.git
    Install-Package Crystis.Web
    ```
 
