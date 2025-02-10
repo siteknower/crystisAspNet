@@ -56,6 +56,7 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
    ```bash
 Install-Package Crystis.Web
    ```
+
    Alternatively, you can manually download CrystisWeb.dll from this repository.
 
 3. Ensure the following files are in your /bin/ directory on the server:
