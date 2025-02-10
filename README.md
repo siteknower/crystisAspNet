@@ -51,10 +51,16 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
    git clone https://github.com/siteknower/crystisAspNet.git
    cd crystisAspNet
    ```
+2. Install CrystisWeb.dll (Recommended: via NuGet)
 
-2. Place the following required files into your `/bin/` directory on the server:
+   ```bash
+  Install-Package Crystis.Web
+   ```
+   Alternatively, you can manually download CrystisWeb.dll from this repository.
 
-   - `CrystisWeb.dll` (Download from this repository)
+3. Ensure the following files are in your /bin/ directory on the server:
+
+   - `CrystisWeb.dll` (if installed manually)
    - `Newtonsoft.Json.dll`
    - All required `.rpt` files
 
