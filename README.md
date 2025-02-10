@@ -14,7 +14,7 @@ One of the key benefits of `crystisAspNet` is that **you do not need to have Cry
 
 To use `crystisAspNet`, ensure that the following files are present in your `/bin/` directory on the server:
 
-- `CrystisWeb.dll` (which you can obtain from this repository)
+- `CrystisWeb.dll` (which you can obtain from this repository or install via NuGet)
 - `Newtonsoft.Json.dll`
 - All `.rpt` files required for your reports
 
