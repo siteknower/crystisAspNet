@@ -40,7 +40,6 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 1. ASP.NET Web Forms or MVC application.
 2. Access to an account at [siteknower.com](https://www.siteknower.com) to obtain your account code and user code.
    - Demo account code (`DEMO1`) and user code (`0000`) are used in these examples to display demo data.
-   - First 30 days are free!
 3. **No need to install Crystal Reports or its runtime. **`Crystis`** takes care of everything.**
 
 ## Installation
