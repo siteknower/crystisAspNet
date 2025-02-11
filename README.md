@@ -144,7 +144,7 @@ public partial class samplew01 : System.Web.UI.Page
 - If you don’t have an account yet, you can test with:
     - **Account Code**: DEMO1
     - **User Code: 0000** (for demo data only)
-    - 
+      
 ## Running the Application
 
 1. Deploy your ASP.NET project to a web server.
