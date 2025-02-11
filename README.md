@@ -139,7 +139,7 @@ public partial class samplew01 : System.Web.UI.Page
 - Place all required `.rpt` files in the `/bin/` directory along with `CrystisWeb.dll`.
 
 ## First 30 Days Free
-- To use CrystisWrb, you need an account code and user code from [Siteknower](https://www.siteknower.com/).
+- To use CrystisWeb, you need an account code and user code from [Siteknower](https://www.siteknower.com/).
 - When you sign up, you get 30 days free with your own account code.
 - If you don’t have an account yet, you can test with:
     - **Account Code**: DEMO1
