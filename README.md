@@ -44,13 +44,17 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 
 ## Installation
 
-1. Clone this repository:
+### Option 1: Using This Repository (Recommended for Testing)
+
+f you simply want to explore how crystisAspNet works, you can clone this repository. The required CrystisWeb.dll file is already included, so no additional installation is needed.
 
    ```bash
    git clone https://github.com/siteknower/crystisAspNet.git
    cd crystisAspNet
    ```
-2. Install CrystisWeb.dll (Recommended: via NuGet)
+### Option 2: Installing in a New ASP.NET Project
+
+If you want to integrate crystisAspNet into your own ASP.NET project, install CrystisWeb.dll via NuGet:
 
    ```bash
    Install-Package Crystis.Web
@@ -58,13 +62,13 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 
    Alternatively, you can manually download CrystisWeb.dll from this repository.
 
-3. Ensure the following files are in your /bin/ directory on the server:
+Make sure the following files are in your /bin/ directory on the server:
 
    - `CrystisWeb.dll` (if installed manually)
    - `Newtonsoft.Json.dll`
    - All required `.rpt` files
 
-3. Configure your `.aspx` page to display reports using `CrystisWeb.dll`.
+Configure your `.aspx` page to display reports using `CrystisWeb.dll`.
 
 ## Quick Start Example
 
