@@ -132,6 +132,12 @@ public partial class samplew01 : System.Web.UI.Page
         tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
 
         tsi.ShowWindow(this, HttpContext.Current);
+
+        // Alternatively, you can get the URL of the report with this.cs.getReportUrl() and display it in your application in some other way:
+        // string turl = tsi.getReportUrl(this, HttpContext.Current);
+        // string url = turl; 
+        // string script = string.Format("window.open('{0}', '_blank');", url);
+        // ClientScript.RegisterStartupScript(this.GetType(), "OpenNewWindow", script, true);
     }
 }
 
