@@ -70,5 +70,33 @@ public partial class samplew01 : System.Web.UI.Page
         tsi.ShowWindow(this, HttpContext.Current);
     }
 
+    protected void btnPrint_Click2(object sender, EventArgs e)
+    {
+        clsCrystisClassWeb tsi = new clsCrystisClassWeb();
+        tsi.dsRPT = dst;
+
+        tsi.AccountCode = "DEMO1";  // your account code
+        tsi.UserCode = "0000";  // yout user code
+
+        //tsi.SortTableName = "Users";
+        //tsi.SortField1 = "Country";
+        //tsi.SortDirection = '1';  // '1' - ascending,  '2' - descending
+        //tsi.SortField2 = "";
+        //tsi.SortField3 = "";
+        //tsi.SortDirection = "";
+        //tsi.ReportFormula = "";  
+
+        string binPath = HttpContext.Current.Server.MapPath("~/bin");
+        tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
+
+        tsi.ShowWindow(this, HttpContext.Current);
+
+        string turl = tsi.getReportUrl(this, HttpContext.Current);
+
+        string url = turl; 
+        string script = string.Format("window.open('{0}', '_blank');", url);
+        ClientScript.RegisterStartupScript(this.GetType(), "OpenNewWindow", script, true);
+    }
+
 }
 

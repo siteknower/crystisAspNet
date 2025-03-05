@@ -17,7 +17,7 @@
          <asp:GridView ID="GridView1" runat="server"></asp:GridView>
 
          <br /><br />
-         <asp:Button ID="Button1" runat="server" Text="Print" OnClick="btnPrint_Click"   />
+         <asp:Button ID="Button1" runat="server" Text="Print" OnClick="btnPrint_Click"/> &nbsp;&nbsp;  <asp:Button ID="Button2" runat="server" Text="Open URL" OnClick="btnPrint_Click2"   />
     </form>
 </body>
 </html>
