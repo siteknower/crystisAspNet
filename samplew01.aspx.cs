@@ -89,12 +89,9 @@ public partial class samplew01 : System.Web.UI.Page
         string binPath = HttpContext.Current.Server.MapPath("~/bin");
         tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
 
-        tsi.ShowWindow(this, HttpContext.Current);
-
         string turl = tsi.getReportUrl(this, HttpContext.Current);
 
-        string url = turl; 
-        string script = string.Format("window.open('{0}', '_blank');", url);
+        string script = string.Format("window.open('{0}', '_blank');", turl);
         ClientScript.RegisterStartupScript(this.GetType(), "OpenNewWindow", script, true);
     }
 
