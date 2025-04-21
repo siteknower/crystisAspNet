@@ -1,4 +1,4 @@
-# crystisAngular - Crystal Reports for asp.net
+# crystisAngular - Crystal Reports for ASP.NET
 
 This repository demonstrates how to integrate Crystal Reports into ASP.NET applications using `crystis for AspNet`, a powerful tool designed for web developers.
 
