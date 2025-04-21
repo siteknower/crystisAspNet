@@ -1,10 +1,12 @@
-# crystisAspNet Example Application
+# crystisAngular - Crystal Reports for asp.net
 
 This repository demonstrates how to integrate Crystal Reports into ASP.NET applications using `crystis for AspNet`, a powerful tool designed for web developers.
 
 ## About crystis for AspNet
 
 `crystisAspNet` is an ASP.NET solution that enables you to display Crystal Reports within your web applications seamlessly. This implementation utilizes `CrystisWeb.dll`, which handles all report processing on the server.
+
+🔗 **Additional features & Troubleshooting, :** [Read More](https://www.siteknower.com/crystis-crystal-reports-asp.net)
 
 ### **No Additional Installations Required:**
 
