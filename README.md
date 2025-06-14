@@ -120,7 +120,7 @@ public partial class samplew01 : System.Web.UI.Page
         return ds;
     }
 
-    protected void btnPrint_Click(object sender, EventArgs e)
+    protected async void btnPrint_Click(object sender, EventArgs e)
     {
         clsCrystisClassWeb tsi = new clsCrystisClassWeb();
         tsi.dsRPT = dst;
@@ -131,12 +131,11 @@ public partial class samplew01 : System.Web.UI.Page
         string binPath = HttpContext.Current.Server.MapPath("~/bin");
         tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
 
-        tsi.ShowWindow(this, HttpContext.Current);
+        await tsi.ShowWindow(this, HttpContext.Current);
 
         // Alternatively, you can get the URL of the report with this.cs.getReportUrl() and display it in your application in some other way:
-        // string turl = tsi.getReportUrl(this, HttpContext.Current);
-        // string url = turl; 
-        // string script = string.Format("window.open('{0}', '_blank');", url);
+        // string turl = await tsi.getReportUrl(this, HttpContext.Current);
+        // string script = string.Format("window.open('{0}', '_blank');", turl);
         // ClientScript.RegisterStartupScript(this.GetType(), "OpenNewWindow", script, true);
     }
 }
