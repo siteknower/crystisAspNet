@@ -47,7 +47,7 @@ public partial class samplew01 : System.Web.UI.Page
         return ds;
     }
 
-    protected void btnPrint_Click(object sender, EventArgs e)
+    protected async void btnPrint_Click(object sender, EventArgs e)
     {
 
         clsCrystisClassWeb tsi = new clsCrystisClassWeb();
@@ -67,32 +67,33 @@ public partial class samplew01 : System.Web.UI.Page
         string binPath = HttpContext.Current.Server.MapPath("~/bin");
         tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
 
-        tsi.ShowWindow(this, HttpContext.Current);
+        await tsi.ShowWindow(this, HttpContext.Current);
     }
 
-    protected void btnPrint_Click2(object sender, EventArgs e)
+    protected async void btnPrint_Click2(object sender, EventArgs e)
     {
-        clsCrystisClassWeb tsi = new clsCrystisClassWeb();
-        tsi.dsRPT = dst;
+        try
+        {
+            clsCrystisClassWeb tsi = new clsCrystisClassWeb();
+            tsi.dsRPT = dst;
+            tsi.AccountCode = "DEMO1";  // your account code
+            tsi.UserCode = "0000";  // yout user code
 
-        tsi.AccountCode = "DEMO1";  // your account code
-        tsi.UserCode = "0000";  // yout user code
+            string binPath = HttpContext.Current.Server.MapPath("~/bin");
+            tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
 
-        //tsi.SortTableName = "Users";
-        //tsi.SortField1 = "Country";
-        //tsi.SortDirection = '1';  // '1' - ascending,  '2' - descending
-        //tsi.SortField2 = "";
-        //tsi.SortField3 = "";
-        //tsi.SortDirection = "";
-        //tsi.ReportFormula = "";  
+            // Await the async method
+            string turl = await tsi.getReportUrl(this, HttpContext.Current);
 
-        string binPath = HttpContext.Current.Server.MapPath("~/bin");
-        tsi.ReportFullName = System.IO.Path.Combine(binPath, "CustomerReport1.rpt");
-
-        string turl = tsi.getReportUrl(this, HttpContext.Current);
-
-        string script = string.Format("window.open('{0}', '_blank');", turl);
-        ClientScript.RegisterStartupScript(this.GetType(), "OpenNewWindow", script, true);
+            string script = string.Format("window.open('{0}', '_blank');", turl);
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenNewWindow", script, true);
+        }
+        catch (Exception ex)
+        {
+            ClientScript.RegisterStartupScript(this.GetType(), "error",
+                string.Format("alert('Error: {0}');", ex.Message.Replace("'", "\\'")),
+                true);
+        }
     }
 
 }

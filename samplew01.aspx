@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="samplew01.aspx.cs" Inherits="samplew01" %>
+﻿<%@ Page Async="true" Language="C#" AutoEventWireup="true" CodeFile="samplew01.aspx.cs" Inherits="samplew01" %>
 
 <!DOCTYPE html>
 
