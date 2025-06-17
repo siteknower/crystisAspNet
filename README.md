@@ -64,12 +64,14 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 
 ### Option 1: Using This Repository (Recommended for Testing)
 
-f you simply want to explore how crystisAspNet works, you can clone this repository. The required CrystisWeb.dll file is already included, so no additional installation is needed.
+If you simply want to explore how crystisAspNet works, you can clone this repository. The required CrystisWeb.dll file is already included, so no additional installation is needed.
 
    ```bash
    git clone https://github.com/siteknower/crystisAspNet.git
    cd crystisAspNet
    ```
+Open the folder using Visual Studio: Open / Web Site
+
 ### Option 2: Installing in a New ASP.NET Project
 
 If you want to integrate crystisAspNet into your own ASP.NET project, install CrystisWeb.dll via NuGet:
