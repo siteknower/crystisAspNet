@@ -41,7 +41,7 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 2. Access to an account at [siteknower.com](https://www.siteknower.com) to obtain your account code and user code.
    - Demo account code (`DEMO1`) and user code (`0000`) are used in these examples to display demo data.
 3. **No need to install Crystal Reports or its runtime. **`Crystis`** takes care of everything.**
-4. 4. **Configuring MIME Types for `.rpt` Files**
+4. **Configuring MIME Types for `.rpt` Files**
    - To ensure `.rpt` files are served correctly, configure the MIME type on your web server. Even if `.rpt` files seem to load fine, explicitly setting MIME types prevents potential issues.
    - **IIS (Windows)**: Add the following to your `web.config`:
      ```xml
@@ -52,7 +52,14 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
          </staticContent>
        </system.webServer>
      </configuration>
-
+   - **Apache**: Add to .htaccess or server configuration:
+      ```text
+      AddType application/octet-stream .rpt
+   - **NGINX**: Add to mime.types or server block:
+      ```text
+      types {
+        application/octet-stream rpt;
+      }
 ## Installation
 
 ### Option 1: Using This Repository (Recommended for Testing)
