@@ -37,11 +37,12 @@ Check out the live demo of **crystisAspNet** [here](https://www.siteknower.com/s
 
 ### Prerequisites
 
-1. ASP.NET Web Forms or MVC application.
-2. Access to an account at [siteknower.com](https://www.siteknower.com) to obtain your account code and user code.
+1. An ASP.NET Web Forms or MVC application using **.NET Framework 4.6 or higher**
+   - ✅ Crystis requires at least .NET Framework 4.6.
+3. Access to an account at [siteknower.com](https://www.siteknower.com) to obtain your account code and user code.
    - Demo account code (`DEMO1`) and user code (`0000`) are used in these examples to display demo data.
-3. **No need to install Crystal Reports or its runtime. **`Crystis`** takes care of everything.**
-4. **Configuring MIME Types for `.rpt` Files**
+4. **No need to install Crystal Reports or its runtime. **`Crystis`** takes care of everything.**
+5. **Configuring MIME Types for `.rpt` Files**
    - To ensure `.rpt` files are served correctly, configure the MIME type on your web server. Even if `.rpt` files seem to load fine, explicitly setting MIME types prevents potential issues.
    - **IIS (Windows)**: Add the following to your `web.config`:
      ```xml
