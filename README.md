@@ -1,4 +1,4 @@
-# crystisAspNet Example Application
+# Crystis AspNet Example Application
 
 This repository demonstrates how to integrate Crystal Reports into ASP.NET applications using `crystis for AspNet`, a powerful tool designed for web developers.
 
