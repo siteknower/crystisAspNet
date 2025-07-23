@@ -181,6 +181,10 @@ public partial class samplew01 : System.Web.UI.Page
 2. Ensure all necessary files (`CrystisWeb.dll`, `Newtonsoft.Json.dll`, `.rpt` files) are in the `/bin/` directory.
 3. Access the report pages through your web browser.
 
+## Video Tutorial
+-----------------------
+[Easy Crystal Reports in ASP.NET](https://www.youtube.com/watch?v=x2XGEG-_ta0)
+
 ## Repository Usage
 
 Feel free to use this repository as:
