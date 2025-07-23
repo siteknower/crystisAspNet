@@ -182,8 +182,7 @@ public partial class samplew01 : System.Web.UI.Page
 3. Access the report pages through your web browser.
 
 ## Video Tutorial
------------------------
-[Easy Crystal Reports in ASP.NET](https://www.youtube.com/watch?v=x2XGEG-_ta0)
+[youtube: Easy Crystal Reports in ASP.NET](https://www.youtube.com/watch?v=x2XGEG-_ta0)
 
 ## Repository Usage
 
